@@ -189,7 +189,7 @@ const MainForm: React.FC<MainFormProps> = ({
               required
             />
             <label>
-             <a href="http://www.cherishlife.org.au/">terms and conditions</a>
+             <a href=" https://www.cherishlife.org.au/terms-conditions/">terms and conditions</a>
             </label></div>
         </div>
       </div>

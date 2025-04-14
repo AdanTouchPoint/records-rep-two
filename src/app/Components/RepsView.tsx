@@ -38,7 +38,7 @@ const RepsView: React.FC<CandidatesView> = ({
     ));
   };
   const renderFilterElements = (postcode: string) => {
-    const data = reps?.filter((item) => item?.electorate === postcode);
+    const data = reps?.filter((item) => item?.electorate === postcode.toUpperCase());
     return data?.map((el, index) => (
       <span className="list-mp-row" key={index}>
         <h3 className="row-candidates">{el.name}</h3>

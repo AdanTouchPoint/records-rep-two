@@ -86,8 +86,9 @@ code {
 .row-candidates{
   display: flex;
   flex-direction: row;
-  padding: 15px;
+  padding: 10px;
   column-gap: 5px;
+  text-align: left;
 }
 
 .head-content{
@@ -389,8 +390,8 @@ display: flex;
   background: var(--main-inputs-bg-color);
   color: var(--primary-btn-font-color);
   padding: 15px 24px 15px 32px;
-  text-transform: capitalize;
-  
+  /*text-transform: capitalize;*/
+  margin-top: 15px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

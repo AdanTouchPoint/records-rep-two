@@ -21,27 +21,39 @@ const RepsView: React.FC<CandidatesView> = ({
   const renderElements = () => {
     return reps?.flat().map((el, index) => (
       <span className="list-mp-row" key={index}>
-        <h3 className="row-candidates">{el.Name}</h3>
-        <span className="row-candidates">
-          <label>Party:</label> <p>{el.Party}</p>
-        </span>
-        <span className="row-candidates">
-          <label>Postion:</label> <p>{el.Position}</p>
-        </span>
+        <h3 className="row-candidates">{el.name}</h3>
+        <h4 className="row-candidates">
+        {el.question1}:
+        </h4>
+        <div className="row-candidates">
+        <p>{el.answer1.toLowerCase()}</p>
+        </div>
+        <h4 className="row-candidates">
+        {el.question2}:
+        </h4>
+        <div className="row-candidates">
+        <p>{el.answer2.toLowerCase()}</p>
+        </div>
       </span>
     ));
   };
   const renderFilterElements = (postcode: string) => {
-    const data = reps?.filter((item) => item?.Electorate === postcode);
+    const data = reps?.filter((item) => item?.electorate === postcode);
     return data?.map((el, index) => (
       <span className="list-mp-row" key={index}>
-        <h1 className="row-candidates">{el.Name}</h1>
-        <span className="row-candidates">
-          <label>Party:</label> <p>{el.Party}</p>
-        </span>
-        <span className="row-candidates">
-          <label>Postion:</label> <p>{el.Position}</p>
-        </span>
+        <h3 className="row-candidates">{el.name}</h3>
+        <h4 className="row-candidates">
+        {el.question1}:
+        </h4>
+        <div className="row-candidates">
+        <p>{el.answer1.toLowerCase()}</p>
+        </div>
+        <h4 className="row-candidates">
+        {el.question2}:
+        </h4>
+        <div className="row-candidates">
+        <p>{el.answer2.toLowerCase()}</p>
+        </div>
       </span>
     ));
   };

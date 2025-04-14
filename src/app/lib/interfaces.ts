@@ -4,13 +4,12 @@ export interface Electorate {
   postcode: string;
 }
 export interface Reps {
-  Name: string;
-  labelpostcode: string;
-  Electorate: string;
-  email: string;
-  state: string;
-  Party: string;
-  Position: string;
+  name: string;
+  electorate: string;
+  question1: string;
+  answer1: string;
+  question2: string;
+  answer2: string;
 }
 export interface Data {
     postcode: string, 

@@ -105,7 +105,7 @@ const MainForm: React.FC<MainFormProps> = ({
       {error && (
         <ErrorPopUp
           message={
-            "Please enter a postcode or electorate, email and acept terms and conditions."
+            "Please enter a postcode or electorate, email and accept terms and conditions."
           }
           onClose={closeError}
         />
